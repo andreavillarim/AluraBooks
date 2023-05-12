@@ -1,0 +1,67 @@
+hr{
+    margin:0;
+}
+
+.rodape__titulo{
+    margin: 1em 1.5em;
+}
+
+.rodape__educacao, .rodape__educacaoonline, .rodape__comunidade{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .rodape{
+        display: flex;
+        justify-content:space-between;
+  
+    }
+    .rodape__educacao, .rodape__educacaoonline, .rodape__comunidade{
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape__titulo{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 2em 1em 0 1.5em;
+       
+    }
+    .rodape__categorias, .rodape__item__botao{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--cinza);
+        text-decoration: none;
+    
+    }
+    .rodape__categorias{
+        text-transform: uppercase;
+        margin: 3em 1em 2em 4em;
+    }
+
+    .rodape__item{
+        margin: 0 1em 1.5em 3em;
+    }
+
+    .rodape__item__botao{
+        vertical-align: 80%;
+    }
+
+    .rodape__comunidade{
+        margin-right: 10em;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .rodape__educacao, .rodape__educacaoonline, .rodape__comunidade{
+        border-left: 1px solid var(--cinza);
+        padding: 1em;
+    }
+    .rodape__categorias, .rodape__item{
+        margin: 2em 3em 2em 1em;
+    }
+    .rodape__comunidade{
+        margin-right: 10em;
+    }
+
+
+    }
